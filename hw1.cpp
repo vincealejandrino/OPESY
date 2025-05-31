@@ -26,13 +26,14 @@ int main() {
             command == "report-util") {
             cout << command << " command recognized. Doing something...\n";
         } else if (command == "clear") {
-            system("CLS");
+            system("clear");
             header();
         } else {
             cout << "Unknown command. Try again.\n";
         }
         
     } while (command != "exit");
+    cout << "Exiting... Goodbye!\n";
 
     return 0;
 }
